@@ -16,6 +16,7 @@
 		7F1D68482A361C75004BF0AC /* bahethTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D68472A361C75004BF0AC /* bahethTests.swift */; };
 		7F1D68522A361C76004BF0AC /* bahethUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D68512A361C76004BF0AC /* bahethUITests.swift */; };
 		7F1D68542A361C76004BF0AC /* bahethUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D68532A361C76004BF0AC /* bahethUITestsLaunchTests.swift */; };
+		7F1D68622A361D56004BF0AC /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1D68612A361D56004BF0AC /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1D68622A361D56004BF0AC /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = baheth;
+			packageProductDependencies = (
+				7F1D68612A361D56004BF0AC /* Turbo */,
+			);
 			productName = baheth;
 			productReference = 7F1D682D2A361C74004BF0AC /* baheth.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 7F1D68242A361C74004BF0AC;
+			packageReferences = (
+				7F1D68602A361D56004BF0AC /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = 7F1D682E2A361C74004BF0AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -596,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F1D68602A361D56004BF0AC /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F1D68612A361D56004BF0AC /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F1D68602A361D56004BF0AC /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F1D68252A361C74004BF0AC /* Project object */;
 }
