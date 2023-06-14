@@ -29,6 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private lazy var session: Session = {
         let configuration = WKWebViewConfiguration()
         configuration.applicationNameForUserAgent = "Turbo Native iOS"
+        configuration.allowsInlineMediaPlayback = true
 
         let session = Session(webViewConfiguration: configuration)
         session.delegate = self
