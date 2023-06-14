@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F1D682D2A361C74004BF0AC /* baheth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baheth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1D682D2A361C74004BF0AC /* باحث.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "باحث.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1D68302A361C74004BF0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1D68322A361C74004BF0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F1D68342A361C74004BF0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		7F1D682E2A361C74004BF0AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F1D682D2A361C74004BF0AC /* baheth.app */,
+				7F1D682D2A361C74004BF0AC /* باحث.app */,
 				7F1D68432A361C75004BF0AC /* bahethTests.xctest */,
 				7F1D684D2A361C76004BF0AC /* bahethUITests.xctest */,
 			);
@@ -149,7 +149,7 @@
 				7F1D68612A361D56004BF0AC /* Turbo */,
 			);
 			productName = baheth;
-			productReference = 7F1D682D2A361C74004BF0AC /* baheth.app */;
+			productReference = 7F1D682D2A361C74004BF0AC /* باحث.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7F1D68422A361C75004BF0AC /* bahethTests */ = {
@@ -458,7 +458,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ieasybooks.baheth;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "باحث";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +485,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ieasybooks.baheth;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "باحث";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
