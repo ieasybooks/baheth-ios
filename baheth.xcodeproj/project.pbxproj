@@ -17,6 +17,9 @@
 		7F1D68522A361C76004BF0AC /* bahethUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D68512A361C76004BF0AC /* bahethUITests.swift */; };
 		7F1D68542A361C76004BF0AC /* bahethUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D68532A361C76004BF0AC /* bahethUITestsLaunchTests.swift */; };
 		7F1D68622A361D56004BF0AC /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1D68612A361D56004BF0AC /* Turbo */; };
+		7F4289D02A618DEF007F2A22 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4289CF2A618DEE007F2A22 /* TabCoordinator.swift */; };
+		7F4289D22A61917C007F2A22 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4289D12A61917C007F2A22 /* AppCoordinator.swift */; };
+		7F4289D42A619410007F2A22 /* CustomVisitableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4289D32A619410007F2A22 /* CustomVisitableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		7F1D684D2A361C76004BF0AC /* bahethUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bahethUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1D68512A361C76004BF0AC /* bahethUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bahethUITests.swift; sourceTree = "<group>"; };
 		7F1D68532A361C76004BF0AC /* bahethUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bahethUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F4289CF2A618DEE007F2A22 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		7F4289D12A61917C007F2A22 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7F4289D32A619410007F2A22 /* CustomVisitableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVisitableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				7F1D68392A361C75004BF0AC /* Assets.xcassets */,
 				7F1D683B2A361C75004BF0AC /* LaunchScreen.storyboard */,
 				7F1D683E2A361C75004BF0AC /* Info.plist */,
+				7F4289CF2A618DEE007F2A22 /* TabCoordinator.swift */,
+				7F4289D12A61917C007F2A22 /* AppCoordinator.swift */,
+				7F4289D32A619410007F2A22 /* CustomVisitableViewController.swift */,
 			);
 			path = baheth;
 			sourceTree = "<group>";
@@ -266,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4289D02A618DEF007F2A22 /* TabCoordinator.swift in Sources */,
 				7F1D68352A361C74004BF0AC /* ViewController.swift in Sources */,
+				7F4289D22A61917C007F2A22 /* AppCoordinator.swift in Sources */,
+				7F4289D42A619410007F2A22 /* CustomVisitableViewController.swift in Sources */,
 				7F1D68312A361C74004BF0AC /* AppDelegate.swift in Sources */,
 				7F1D68332A361C74004BF0AC /* SceneDelegate.swift in Sources */,
 			);
@@ -443,9 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7N7QJJH576;
+				DEVELOPMENT_TEAM = 6VU6999229;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = baheth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,6 +474,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ieasybooks.baheth;
 				PRODUCT_NAME = "باحث";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,9 +486,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7N7QJJH576;
+				DEVELOPMENT_TEAM = 6VU6999229;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = baheth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -490,6 +505,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ieasybooks.baheth;
 				PRODUCT_NAME = "باحث";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
