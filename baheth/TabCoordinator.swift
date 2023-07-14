@@ -33,11 +33,23 @@ class TabCoordinator: NSObject {
         navigationController.tabBarItem.image = UIImage(systemName: icon)
     }
 
-    private func visit(url: URL) {
-        let viewController = CustomVisitableViewController(url: url)
-        navigationController.pushViewController(viewController, animated: true)
+    private func visit(url: URL, action: VisitAction = .advance) {
+        let viewController = VisitableViewController(url: url)
+
+        if session.activeVisitable?.visitableURL == url {
+            replaceLastController(with: viewController)
+        } else if action == .advance {
+            navigationController.pushViewController(viewController, animated: true)
+        } else {
+            replaceLastController(with: viewController)
+        }
 
         session.visit(viewController)
+    }
+
+    private func replaceLastController(with controller: UIViewController) {
+        let viewControllers = navigationController.viewControllers.dropLast()
+        navigationController.setViewControllers(viewControllers + [controller], animated: false)
     }
 
     private lazy var session: Session = {
@@ -47,6 +59,7 @@ class TabCoordinator: NSObject {
 
         let session = Session(webViewConfiguration: configuration)
         session.delegate = self
+        session.webView.allowsLinkPreview = false
         return session
     }()
 }
