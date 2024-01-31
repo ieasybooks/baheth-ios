@@ -19,6 +19,10 @@ class TabCoordinator: NSObject {
         self.title = title
         self.icon = icon
         self.url = url
+        
+        super.init()
+        
+        navigationController.setNavigationBarHidden(true, animated: true)
     }
 
     func start() {
