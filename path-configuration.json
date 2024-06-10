@@ -1,0 +1,14 @@
+{
+  "settings": {
+  },
+  "rules": [
+    {
+      "patterns": [
+        "/contacts$"
+      ],
+      "properties": {
+        "presentation": "modal"
+      }
+    }
+  ]
+}

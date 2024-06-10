@@ -1,4 +1,5 @@
 {
+  "originHash" : "19bb620e6afd6187de68ef6e1a40f0b59d998d5fdb2b3ee3ded41b021f1d1d85",
   "pins" : [
     {
       "identity" : "turbo-ios",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/hotwired/turbo-ios",
       "state" : {
         "branch" : "main",
-        "revision" : "dcab2693a3c0f2b3aa3227ca5b62aaac215771bf"
+        "revision" : "cba87761294efa20f1eb1dae141b1b0e9decb514"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

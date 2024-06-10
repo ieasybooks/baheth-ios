@@ -13,38 +13,31 @@ class AppCoordinator: NSObject {
     var tabCoordinators: [TabCoordinator] = []
 
     func start() {
-        if #available(iOS 15.0, *) {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = UIColor.white
-            UITabBar.appearance().standardAppearance = appearance
-            UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance
-        }
-
         rootViewController.tabBar.semanticContentAttribute = .forceRightToLeft
+        rootViewController.tabBar.backgroundColor = .white
 
-        let homeTab = TabCoordinator(
-            title: "الرئيسية",
-            icon: "house",
-            url: URL(string: "https://baheth.ieasybooks.com")!
+        let transcriptionsTab = TabCoordinator(
+            title: "",
+            icon: "doc.plaintext",
+            url: URL(string: "https://baheth.ieasybooks.com/transcriptions/search")!
         )
-        homeTab.start()
+        transcriptionsTab.start()
 
-        let speakersTab = TabCoordinator(
-            title: "المتحدّثون",
-            icon: "person.2.fill",
-            url: URL(string: "https://baheth.ieasybooks.com/speakers")!
+        let hadithsTab = TabCoordinator(
+            title: "",
+            icon: "text.bubble",
+            url: URL(string: "https://baheth.ieasybooks.com/hadiths/search")!
         )
-        speakersTab.start()
+        hadithsTab.start()
 
-        let playlistsTab = TabCoordinator(
-            title: "قوائم التشغيل",
-            icon: "play.rectangle.on.rectangle.fill",
-            url: URL(string: "https://baheth.ieasybooks.com/playlists")!
+        let shamelaTab = TabCoordinator(
+            title: "",
+            icon: "book.closed",
+            url: URL(string: "https://baheth.ieasybooks.com/shamela/search")!
         )
-        playlistsTab.start()
+        shamelaTab.start()
 
-        tabCoordinators = [homeTab, speakersTab, playlistsTab]
+        tabCoordinators = [transcriptionsTab, hadithsTab, shamelaTab]
         rootViewController.viewControllers = tabCoordinators.map(\.navigationController)
     }
 }
